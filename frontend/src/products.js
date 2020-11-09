@@ -18,7 +18,7 @@ const products = [
     category: 'tulips',
     price: 50,
     countInStock: 3,
-    rating: 4.5,
+    rating: 1.5,
     numReviews: 4
   },
   {
@@ -29,7 +29,7 @@ const products = [
     category: 'roses',
     price: 50,
     countInStock: 3,
-    rating: 4.5,
+    rating: 1,
     numReviews: 4
   },
   {
@@ -40,7 +40,7 @@ const products = [
     category: 'roses',
     price: 50,
     countInStock: 3,
-    rating: 4.5,
+    rating: 5,
     numReviews: 4
   },
   {
@@ -51,7 +51,7 @@ const products = [
     category: 'roses',
     price: 50,
     countInStock: 3,
-    rating: 4.5,
+    rating: 2,
     numReviews: 4
   },
   {
@@ -62,7 +62,7 @@ const products = [
     category: 'roses',
     price: 50,
     countInStock: 3,
-    rating: 4.5,
+    rating: 3.5,
     numReviews: 4
   }
 ]
