@@ -75,3 +75,4 @@ const ProductScreen = ({match}) => {
 }
 
 export default ProductScreen
+
