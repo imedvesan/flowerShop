@@ -17,7 +17,7 @@ const products = [
     description: 'second bouquet',
     category: 'tulips',
     price: 50,
-    countInStock: 3,
+    countInStock: 5,
     rating: 1.5,
     numReviews: 4
   },
