@@ -1,0 +1,14 @@
+{
+  "name": "flowerboutique",
+  "version": "1.0.0",
+  "description": "Ioana Flower Boutique ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Ioana Medvesan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
