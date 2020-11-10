@@ -13,7 +13,7 @@ const ProductScreen = ({match}) => {
       setProduct(data)
     }
     fetchProduct()
-  }, [])
+  }, [match])
 
   return (
     <>
@@ -26,7 +26,7 @@ const ProductScreen = ({match}) => {
         <Col md={3}>
           <ListGroup variant='flush'>
             <ListGroup.Item>
-              <h>{product.name}</h>
+              <h3>{product.name}</h3>
             </ListGroup.Item>
 
             <ListGroup.Item>
