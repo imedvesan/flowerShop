@@ -7,8 +7,8 @@ const reviewSchema = mongoose.Schema({
   rating: {
     type: Number, required: true
   },
-  name: {
-    comment: String, required: true
+  comment: {
+    type: String, required: true
   }
 }, {
   timestamps: true
