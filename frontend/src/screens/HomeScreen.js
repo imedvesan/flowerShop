@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import Product from '../components/Product';
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../actions/productActions'
-import { Loader } from '../components/Loader';
+import Loader from '../components/Loader';
 import Message from '../components/Message';
 
 
