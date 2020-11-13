@@ -19,7 +19,7 @@ const HomeScreen = () => {
 
   return (
     <>
-      <h1>Flower bouquets</h1>
+      {/* <h1>Flower bouquets</h1> */}
       { loading ? (
         <Loader />
         ) : error ? (

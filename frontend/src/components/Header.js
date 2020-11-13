@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown, Image } from 'react-bootstrap';
 import { logout } from '../actions/userActions';
 
 const Header = () => {
@@ -18,6 +18,7 @@ const Header = () => {
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
+          <Image src={'https://www.logomood.com/wp-content/uploads/edd/2015/08/FlowerBloutiquePreview.jpg'} alt={'logo'} style={{width: "50px", height: "50px"}} fluid rounded />
           <LinkContainer to="/">
             <Navbar.Brand>Flower Boutique</Navbar.Brand>
           </LinkContainer>
