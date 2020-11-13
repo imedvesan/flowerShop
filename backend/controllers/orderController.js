@@ -59,6 +59,7 @@ const updateOrderToPaid = asyncHandler(async(req, res) => {
       email_address: req.body.payer.email_address
     }
     const updatedOrder = await order.save()
+    // console.log('updatedOrder', updatedOrder)
     res.jason(updatedOrder)
   } else {
     res.status(404)
@@ -67,5 +68,5 @@ const updateOrderToPaid = asyncHandler(async(req, res) => {
 
 })
 
-export { addOrderItems, getOrderById, updateOrderToPaid}
+export { addOrderItems, getOrderById, updateOrderToPaid }
 
