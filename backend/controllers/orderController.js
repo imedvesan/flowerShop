@@ -59,13 +59,28 @@ const updateOrderToPaid = asyncHandler(async(req, res) => {
       email_address: req.body.payer.email_address
     }
     const updatedOrder = await order.save()
-    // console.log('updatedOrder', updatedOrder)
     res.jason(updatedOrder)
   } else {
     res.status(404)
     throw new Error('Order not found')
   }
+})
 
+// description: Update order to delivered
+// route: GET/api/orders/:id/deliver
+// access: private admin route
+const updateOrderToDelivered = asyncHandler(async(req, res) => {
+  const order = await Order.findById(req.params.id)
+  if(order) {
+    order.isDelivered = true
+    order.deliveredAt = Date.now()
+
+    const updatedOrder = await order.save()
+    res.jason(updatedOrder)
+  } else {
+    res.status(404)
+    throw new Error('Order not found')
+  }
 })
 
 
@@ -85,5 +100,5 @@ const getOrders = asyncHandler(async(req, res) => {
   res.json(orders)
 })
 
-export { addOrderItems, getOrderById, updateOrderToPaid, getMyOrders, getOrders}
+export { addOrderItems, getOrderById, updateOrderToPaid, getMyOrders, getOrders, updateOrderToDelivered}
 
