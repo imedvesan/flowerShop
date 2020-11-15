@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Product from '../components/Product';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux'
 import { listProducts } from '../actions/productActions'
 import Loader from '../components/Loader';
 import Paginate from '../components/Paginate';
 import Message from '../components/Message';
+import ProductCarousel from '../components/ProductCarousel';
 
 
 const HomeScreen = ({ match }) => {
@@ -23,6 +24,8 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
+    {!keyword && <ProductCarousel />}
+
       {/* <h1>Flower bouquets</h1> */}
       { loading ? (
         <Loader />
