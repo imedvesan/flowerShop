@@ -5,6 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, Container, NavDropdown, Image } from 'react-bootstrap';
 import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions';
+import flowerLogo from '../../src/logo-white.png'
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -20,7 +21,7 @@ const Header = () => {
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
-          <Image src={'https://www.logomood.com/wp-content/uploads/edd/2015/08/FlowerBloutiquePreview.jpg'} alt={'logo'} style={{width: "50px", height: "50px"}} fluid rounded />
+          <Image src={flowerLogo} alt={'logo'} style={{width: "50px", height: "50px"}} fluid rounded />
           <LinkContainer to="/">
             <Navbar.Brand>Flower Boutique</Navbar.Brand>
           </LinkContainer>
