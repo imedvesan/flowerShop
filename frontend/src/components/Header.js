@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, Container, NavDropdown, Image } from 'react-bootstrap';
 import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions';
-import flowerLogo from '../../src/logo-white.png'
+import flowerLogo from '../../src/logo-white.png';
 
 const Header = () => {
   const dispatch = useDispatch()
