@@ -2,6 +2,9 @@
   "name": "flowerboutique",
   "version": "1.0.0",
   "description": "Ioana Flower Boutique ",
+  "engines": {
+    "npm": "6.14.8"
+  },
   "main": "server.js",
   "type": "module",
   "scripts": {
