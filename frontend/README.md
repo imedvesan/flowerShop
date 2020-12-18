@@ -4,7 +4,12 @@ An e-commerce site that sells flower bouquets
 ● Designed the UI using React, React Bootstrap, Redux, CSS
 
 
-### `npm run dev`
+### `npm run dev` (in the frontend)
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
+### `npm start`
+
+Server running in production mode on port 5000
